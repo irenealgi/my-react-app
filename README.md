@@ -5,10 +5,31 @@ For an overview of the project structure please refer to the [Gatsby documentati
 
 ## Install
 
+Install node.js:
+
+```
+brew install node
+```
+
+If you have problems with the node dependencies, try to install Node.js 10
+
+```
+brew install node@10
+echo 'export PATH="/usr/local/opt/node@10/bin:$PATH"' >> ~/.bash_profile
+```
+
 Make sure that you have the Gatsby CLI program installed:
 ```sh
 npm install --global gatsby-cli
 ```
+
+Install project dependencies:
+
+```
+npm install
+```
+
+### Only for creating a new Gatsby application:
 
 And run from your CLI:
 ```sh
