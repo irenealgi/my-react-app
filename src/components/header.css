@@ -3,6 +3,13 @@
   width: 100%;
   padding: 50px 0px 50px 0px;
   z-index: 100;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.HeaderScrolled {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px 0;
+
 }
 
 .HeaderGroup {
@@ -16,30 +23,38 @@
 }
 
 .Header a {
-  color: black;
-  font-weight: 100;
+  color: white;
+  font-weight: 700;
 }
 
 .Header button {
   padding: 8px 20px 8px 20px;
   font-size: 20px;
-  color: white;
+  color: black;
   font-weight: 400;
-  background-color: #CE9778;
-  border: none;
+  background-color: #C1B6AA;
+  border-width: 1px;
   border-radius: 10px;
+  border-color: rgba(255, 255, 255, 0.5);
   outline: none;
   cursor: pointer;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-@@media (max-widt : 640px){
+.Header button:hover {
+  background: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-3px);
+}
+
+@media (max-width :640px){
   .Header {
     padding: 15px 0px 15px 0px;
   }
   .HeaderGroup {
     grid-template-columns: repeat(4, auto)
   }
-  .Header a:nth-child(4) {
+  .Header a:nth-child(3) {
     display: none;
   }
 

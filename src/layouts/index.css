@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i');
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -14,32 +15,46 @@ a {
 }
 
 .Hero {
-  background: url("../images/minimal-background.jpg");
+  background: url("../images/conversation-hero.jpg");
   height: 920px;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .HeroGroup {
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 550px;
   padding: 150px 50px 150px 50px;
   text-align: center;
+
+
+  .card-overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
 
 
 }
 
 .Hero h1 {
   margin: 0;
-  color: #41443B;
+  color: #ffffff;
   font-size: 60px;
   line-height: 1.2;
+  opacity: 0;
+  animation: HeroAnimation;
+  animation-duration: 3s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Hero p {
-  color: rgba(65, 68, 59, 0.8);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 25px;
   line-height: 1.5;
+  opacity: 0;
+  animation: HeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Hero a{
@@ -47,10 +62,16 @@ a {
   font-weight: 600;
   color: white;
   text-transform: uppercase;
-  background: rgba(163, 151, 129, 0.7);
-  padding: 9px 20px 9px 20px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 40px 10px 40px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 20px;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Hero a:hover {
+  background: white;
+  color: black;
 }
 
 @media (max-width: 640px) {
@@ -62,5 +83,56 @@ a {
   }
   .Hero p {
     font-size: 24px;
+  }
+}
+
+@keyframes HeroAnimation {
+  0% {
+      opacity: 0;
+      transform: translateY(20px)
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0px)
+  }
+}
+
+.Hero svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+}
+
+.Cards h2 {
+  color: black;
+  margin: 50px 20px 50px 20px;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(104.74deg, #4D0505 0%,#C64D51 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.CardGroup{
+  margin: 50px 100px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  justify-items: center;
+}
+
+@media (max-width:1060px) {
+  .CardGroup {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .CardGroup {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
