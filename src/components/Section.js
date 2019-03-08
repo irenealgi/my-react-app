@@ -36,13 +36,16 @@ const SectionLogo = styled.img`
 const SectionTitleGroup = styled.div`
   display: grid;
   grid-template-columns: 300px auto;
-  margin: 260px 40px 0;
+  margin: 260px auto 0;
   grid-gap: 20px;
   grid-template-rows: auto 100%;
   z-index: 1;
 
+
   @media (max-width: 720px) {
       grid-template-columns: 1fr;
+      margin-left: 40px;
+      margin-right: 40px;
   }
 
 `
@@ -50,6 +53,7 @@ const SectionTitle = styled.h3`
   color: white;
   font-size: 40px;
   margin: 0;
+  max-width: 300px;
   line-height: 1.2;
 
   @media (max-width: 720px) {
@@ -58,6 +62,7 @@ const SectionTitle = styled.h3`
 `
 const SectionText = styled.p`
   margin-top: 0;
+  max-width: 500px;
 `
 const WaveBottom = styled.div`
   position: absolute;
