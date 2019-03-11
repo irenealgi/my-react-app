@@ -63,6 +63,7 @@ const SectionTitle = styled.h3`
 const SectionText = styled.p`
   margin-top: 0;
   max-width: 500px;
+  color: white;
 `
 const WaveBottom = styled.div`
   position: absolute;

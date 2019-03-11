@@ -1,0 +1,24 @@
+{
+    "cells": [
+        {
+            "title": "First item",
+            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
+        },
+        {
+            "title": "Second item",
+            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
+        },
+        {
+            "title": "Third item",
+            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
+        },
+        {
+            "title": "Fourth item",
+            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
+        },
+        {
+            "title": "Fifth item",
+            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
+        }
+    ]
+}
