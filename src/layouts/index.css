@@ -15,28 +15,32 @@ a {
 }
 
 .Hero {
-  background: url("../images/header-background.png");
+  background: url("../images/paint-background.png");
   height: 850px;
+  opacity: 1;
   background-size: cover;
   background-position: center;
   position: relative;
 }
 
+
 .HeroGroup {
   margin: 0 auto;
+  opacity: 1;
   max-width: 550px;
   padding: 150px 50px 150px 50px;
   text-align: center;
-  
 
- 
+
+
+
 
 
 }
 
 .Hero h1 {
   margin-bottom: 0px;
-  color: #ffffff;
+  color: #000000;
   font-size: 80px;
   line-height: 1.2;
   opacity: 0;
@@ -48,7 +52,7 @@ a {
 }
 
 .Hero p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 1);
   font-size: 35px;
   line-height: 1.5;
   opacity: 0;
@@ -59,18 +63,18 @@ a {
 .Hero a{
   font-size: 30px;
   font-weight: 600;
-  color: #F93457;
+  color: black;
   text-transform: none;
   background: rgba(255, 255, 255, 0.9);
   padding: 10px 40px 10px 40px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 30px;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-  
+
 }
 
 .Hero a:hover {
-  background: #F93457;
+  background: black;
   border: 1px solid white;
   color: white;
 }

@@ -34,21 +34,19 @@
 }
 
 .Card h3 {
-    color: #F93457;
+    color: black;
     font-size: 30px;
     margin: 20px 0 0 20px;
     width: 190px;
-    
+
 
 }
 
 .Card p {
-    color: #F93457;
+    color: black;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 20px;
     align-self: end;
     margin: 0 0 20px 20px;
 }
-
-

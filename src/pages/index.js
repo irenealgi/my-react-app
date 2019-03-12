@@ -41,6 +41,8 @@ const IndexPage = () => (
         <Wave />
       </div>
     </div>
+  
+
     <div className="Cards">
       <h2>Case studies</h2>
       <div className="CardGroup">

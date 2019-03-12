@@ -7,7 +7,7 @@
 }
 
 .HeaderScrolled {
-  background: rgba(249, 52, 087, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   padding: 15px 0;
 
 }
@@ -23,7 +23,7 @@
 }
 
 .Header a {
-  color: white;
+  color: black;
   font-weight: 700;
 }
 
