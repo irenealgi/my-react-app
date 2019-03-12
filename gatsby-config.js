@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Irene Alegre | Product Designer',
-    description: 'Product Designer based in London,
+    description: 'Product Designer based in London',
     keywords: 'product designer, london designer, ux designer, ui designer'
   },
   plugins: [
