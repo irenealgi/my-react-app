@@ -66,12 +66,22 @@ const IndexPage = () => (
           image={require('../images/portfolio_thumbnail.png')} />
       </div>
     </div>
+    {/*}
+
     <Section
-      image={require('../images/bookshelf.jpg')}
+      image={require('../images/flower.jpg')}
       logo={require('../images/logo-react.png')}
-      title="English lessons for everyone"
-      text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
+      title="About"
+      text="Product designer with a special focus on UX, market research and having a deep understanding of business needs and objectives. I bring a holistic approach to product development, taking into account views and ideas from all stakeholders and delivering designs that are functional, easy to use and understand, and pleasant to the eye. I enjoy solving problems and coming up with universal solutions that will stand the test of time and will make sense to as many users as possible. My design process is guided by a bit of user research, a pinch of common sense, a few design heuristics and lots of testing and iterating.
+
+      When I’m not designing, I love to read and write, cycle and play the ukulele. I also take photographs, and specialise in portrait photography."
+
     />
+
+*/}
+
+
+    {/*}
     <SectionCaption>12 sections - 6 hours</SectionCaption>
     <SectionCellGroup>
       {staticdata.cells.map(cell => (
@@ -80,7 +90,12 @@ const IndexPage = () => (
           image={cell.image} />
       ))}
     </SectionCellGroup>
+
+*/}
+
   </div>
+
+
 )
 
 export default IndexPage

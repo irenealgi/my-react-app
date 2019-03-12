@@ -16,7 +16,7 @@ a {
 
 .Hero {
   background: url("../images/header-background.png");
-  height: 620px;
+  height: 850px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -27,7 +27,7 @@ a {
   max-width: 550px;
   padding: 150px 50px 150px 50px;
   text-align: center;
-
+  
 
   .card-overlay {
     background: rgba(0, 0, 0, 0.5);
@@ -37,9 +37,9 @@ a {
 }
 
 .Hero h1 {
-  margin: 0;
+  margin-bottom: 0px;
   color: #ffffff;
-  font-size: 60px;
+  font-size: 80px;
   line-height: 1.2;
   opacity: 0;
   animation: HeroAnimation;
@@ -51,15 +51,15 @@ a {
 
 .Hero p {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 28px;
+  font-size: 35px;
   line-height: 1.5;
   opacity: 0;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
   animation: HeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Hero a{
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 600;
   color: #F93457;
   text-transform: none;
@@ -68,6 +68,7 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 30px;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  
 }
 
 .Hero a:hover {
@@ -112,22 +113,29 @@ a {
   font-size: 60px;
   text-align: center;
   font-weight: 700;
-  color: black;
-}
+  margin-bottom: 100px;
+  }
 
 .CardGroup{
   margin: 50px 100px 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
+  grid-gap: 60px;
   justify-items: center;
-}
+ }
+
+ @media (min-width: 1440px) {
+   .CardGroup {
+     grid-template-columns: repeat (4, 1fr);
+   }
+ }
 
 @media (max-width:1060px) {
   .CardGroup {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 
 @media (max-width: 720px) {
   .CardGroup {

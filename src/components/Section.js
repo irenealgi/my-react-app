@@ -25,7 +25,7 @@ const Overlay = styled.div`
   background: #000;
   opacity: 0.6;
   z-index: 0;
-`;
+`
 
 const SectionLogo = styled.img`
   align-self: end;
@@ -83,8 +83,7 @@ const WaveTop = styled.div`
 const Section = props => (
   <SectionGroup image={props.image}>
     <Overlay></Overlay>
-    <WaveTop><Wave /></WaveTop>
-    <WaveBottom><Wave /></WaveBottom>
+
     <SectionTitleGroup>
       <SectionTitle>{props.title}</SectionTitle>
       <SectionText>{props.text}</SectionText>

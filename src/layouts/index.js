@@ -7,6 +7,8 @@ import Header from '../components/header'
 import './index.css'
 import Footer from '../components/footer';
 
+
+
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
@@ -20,8 +22,8 @@ const Layout = ({ children, data }) => (
     {children()}
 
     <Footer data={data}>
-      This is an awesome footer.
-
+      © Irene Alegre. Built from scratch with lots of patience and some tea.
+  
     </Footer>
   </div>
 )

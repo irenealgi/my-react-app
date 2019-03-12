@@ -49,18 +49,23 @@ const LinkGroup = styled.div`
 `
 const Copyright = styled.div`
     color: grey;
-    max-width: 500px;
+    max-width: 100%;
     margin: 0 auto;
+    margin-top: 100px;
     padding: 0 20px;
 `
 
 const Footer = ({ data, children }) => (
-    <FooterGroup>
+   
+   <FooterGroup>
+   {/*
         <Text>Tweet "Learning English with Irene"</Text>
         <Button>Tweet</Button>
         <LinkGroup>{data.allContentfulLink.edges.map(edge => (
             <a href={edge.node.url}>{edge.node.title}</a>
         ))}</LinkGroup>
+    */}
+
         <Copyright>{children}</Copyright>
     </FooterGroup>
 )
