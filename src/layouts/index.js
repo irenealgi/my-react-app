@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 
-import Header from '../components/header'
+import Header from '../components/Header'
 import './index.css'
 import Footer from '../components/footer';
 
@@ -23,7 +23,7 @@ const Layout = ({ children, data }) => (
 
     <Footer data={data}>
       © Irene Alegre. Built from scratch with lots of patience and some tea.
-  
+
     </Footer>
   </div>
 )
